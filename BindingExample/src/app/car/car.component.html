@@ -1,0 +1,38 @@
+<p>
+  This is not a car, this is a <strong>{{ brand }}</strong
+  >!
+</p>
+<p>This car's color is {{ color.value }}</p>
+
+<p><input type="text" #color (keyup)="(0)" /></p>
+<br />
+<p>{{ soldTextProperty }}</p>
+<p>
+  Sold<input
+    type="checkbox"
+    id="sold"
+    [checked]="soldProperty"
+    (click)="sellCar()"
+  />
+</p>
+<p>Hybrid: {{ hybridProperty }}</p>
+<p>
+  Hybrid<input
+    type="radio"
+    name="hybrid"
+    value="yes"
+    checked="false"
+    (click)="toggleHybrid($event)"
+  />
+</p>
+<p>
+  Not hybrid<input
+    type="radio"
+    value="no"
+    checked="true"
+    name="hybrid"
+    (click)="toggleHybrid($event)"
+  />
+</p>
+<p>This car was made in {{ madeInProperty }}</p>
+<p>Made in<input type="text" [(ngModel)]="madeInProperty" /></p>
