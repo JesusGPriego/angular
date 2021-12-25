@@ -11,3 +11,8 @@ workflow and project setup. Introduction to Angular components.
 
 This time, I've learned about bindings in Angular.
 I show here work with property, event and two way binding.
+
+# Calculator added
+
+Simple calculator made by using angular components, interpolation and bindings.
+The calculator has been styled a bit by using Bootstrap.

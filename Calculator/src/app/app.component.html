@@ -1,0 +1,22 @@
+<div class="card" style="width: 18rem">
+  <div class="card-body">
+    <h1 class="card-title">{{ title }}</h1>
+    <form>
+      <input class="card-text" type="number" [(ngModel)]="num1" name="num1" />
+      <input type="number" [(ngModel)]="num2" name="num2" />
+      <input
+        class="btn btn-primary"
+        type="button"
+        value="add"
+        (click)="add()"
+      />
+      <input
+        class="btn btn-primary"
+        type="button"
+        value="substract"
+        (click)="substract()"
+      />
+    </form>
+    <p>Result = {{ result }}</p>
+  </div>
+</div>

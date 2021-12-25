@@ -1,0 +1,11 @@
+input {
+  margin: 0.3em;
+}
+
+p {
+  margin: 1em 0.5em;
+}
+
+.card {
+  margin: 3em auto;
+}
